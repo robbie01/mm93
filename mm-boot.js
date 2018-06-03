@@ -1,11 +1,4 @@
 (function() {
-    function loadScript(src, cb) {
-      var script = document.createElement('script')
-      script.type = 'text/javascript'
-      script.src = src
-      script.onload = () => cb()
-      document.body.appendChild(script)
-    }
     var cli = {
       wrap: async function(f) {
         var originalPrompt = this.cli.prompt.innerHTML
@@ -32,7 +25,7 @@
         }
       }
     }
-    loadScript('https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.4/system.js', () => {
+    $loader.script('https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.4/system.js').then(() => {
       SystemJS.registry.set('cli', SystemJS.newModule(cli))
       SystemJS.import('https://rawgit.com/robbie0630/mm93/master/mm-cli.js').then(m => le._apps.mm = m.leApp)
     })
