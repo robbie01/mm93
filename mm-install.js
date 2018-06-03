@@ -32,5 +32,6 @@
         localStorage['boot/mm.js'] = req.responseText
         text.textContent = 'finished! restart windows 93 to activate'
     }
-    spinner.stop()
+    spinner.start()
+    req.send()
 })
