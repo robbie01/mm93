@@ -34,4 +34,4 @@
     }
     spinner.start()
     req.send()
-})
+})()
