@@ -21,6 +21,16 @@ mm unload <name>: unloads a module and removes it from the system
 mm reload <name>: unloads and loads a module
 ```
 
+## What is the module format?
+
+The module format is extremely simple. All you have to do is export an object called `leApp` which corresponds to the app's `le._apps` entry.
+
+You can do that with either of the following methods, depending on your module system:
+```js
+export const leApp = { /* insert app here */ } // note: needs transpilation
+exports.leApp = { /* insert app here */ }
+```
+
 ## Want to contribute?
 
 Please feel free to do so! All contributions are very welcome.
