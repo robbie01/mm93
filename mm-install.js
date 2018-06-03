@@ -32,6 +32,7 @@
         localStorage['boot/mm.js'] = req.responseText
         text.textContent = 'finished! restart windows 93 to activate'
     }
+    req.open('GET', 'https://rawgit.com/robbie0630/mm93/master/mm-boot.js')
     spinner.start()
     req.send()
 })()
