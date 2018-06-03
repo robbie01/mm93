@@ -13,6 +13,11 @@ The Windows 93 Module Manager, hereon referred to as `mm`, is a simple package m
 
 ## How to use?
 
+To install `mm`, run the following command in the Terminal
+```
+js https://rawgit.com/robbie0630/mm93/master/mm-install.js
+```
+
 Here's a very simple listing of `mm` commands:
 ```
 mm help: show help screen
