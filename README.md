@@ -43,3 +43,8 @@ Please feel free to do so! All contributions are very welcome.
 ## Why is this README worded so oddly?
 
 I wrote this at 6:30 AM with absolutely zero sleep.
+
+## To-do
+
+* Persist module loads and unloads, maybe add a `register` or `install`/`unregister` or `uninstall` command?
+* make this way safer, confirm that loads are OK, confirm that module names are OK in unloads and reloads
