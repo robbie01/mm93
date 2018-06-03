@@ -11,6 +11,16 @@ The Windows 93 Module Manager, hereon referred to as `mm`, is a simple package m
 * More freedom to the user - users are free to alias `mm` modules to whatever they'd like
 * Loads modules dynamically - `mm` uses SystemJS, a dynamic JavaScript module loader
 
+## How to use?
+
+Here's a very simple listing of `mm` commands:
+```
+mm help: show help screen
+mm load <name> <url>: loads a module from a url
+mm unload <name>: unloads a module and removes it from the system
+mm reload <name>: unloads and loads a module
+```
+
 ## Want to contribute?
 
 Please feel free to do so! All contributions are very welcome.
